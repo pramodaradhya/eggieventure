@@ -29,7 +29,6 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
         {
             Playercontroller.PlayerDeathAnimation();
-            //gameObject.SetActive(true);
         }
         if (health >numofhearts)
         {
@@ -58,8 +57,6 @@ public class PlayerHealth : MonoBehaviour
 
     internal void TakeDamage(int attackDamage)
     {
-        // eggheart = numofhearts;
-        
         int takedamage = health - attackDamage;
         playSound.Play(0);
     }

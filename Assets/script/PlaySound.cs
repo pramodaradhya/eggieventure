@@ -11,10 +11,6 @@ public class PlaySound : MonoBehaviour
         Source = GetComponent<AudioSource>();
     }
 
-    void Update()
-    {
-        
-    }
     public void Play(int sound)
     {
         Source.clip = audioClips[sound];

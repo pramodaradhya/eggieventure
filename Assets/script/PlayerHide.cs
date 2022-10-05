@@ -6,9 +6,7 @@ public class PlayerHide : MonoBehaviour
 {
     private Rigidbody2D rb;
     private SpriteRenderer rend;
-    //private bool canHide = false;
     private bool hiding = false;
-    // Start is called before the first frame update
    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
