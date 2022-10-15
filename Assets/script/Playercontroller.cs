@@ -86,7 +86,7 @@ public class Playercontroller : MonoBehaviour
 
             if (Input.GetButtonDown("Jump"))
             {
-                playSound.Play(1);
+                
                 rb.velocity = new Vector2(rb.velocity.x, _speedy);
             }
         }
