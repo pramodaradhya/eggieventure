@@ -8,7 +8,7 @@ public class Playercontroller : MonoBehaviour
 {
     // public Transform player;
     // public Vector3 offset;
-    private float _degree = 12;
+    private float _degree = 15;
     private float _speedx = 6f;
     private float _speedy = 6f;
     public GameOverController gameOverController;
@@ -30,10 +30,11 @@ public class Playercontroller : MonoBehaviour
     {
         
         
-        playSound.Play(0);
+        
         //Debug.Log("player killed by enemy");
         playerHealth.health = playerHealth.health - boss_Attack.attackDamage;
         playerHealth.Updatehealth();
+        playSound.Play(0);
 
         if (playerHealth.health <= 0 )
         {
